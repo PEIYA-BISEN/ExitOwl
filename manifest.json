@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Exitowl- Adventure calls? The path unknown! With Exitowl you're not alone.",
+  "version": "1.0",
+  "description": "Optimized routes with real-time blockage detection like road block due to falling to tree, heavy rain, landslide & suggests nearby resources like medical center, shelter homes, food court.",
+  "permissions": [
+    "geolocation",
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  
+  "host_permissions": [
+    "https://router.project-osrm.org/*",
+    "https://api.openrouteservice.org/*",
+    "https://*.openstreetmap.org/*",
+    "https://nominatim.openstreetmap.org/*",
+    "https://api.openweathermap.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon48.png",
+    "default_popup_size": {
+      "width": 500,
+      "height": 500
+    }
+  },
+  "icons": {
+    "16": "./icons/icon16.png",
+    "48": "./icons/icon48.png",
+    "128": "./icons/icon128.png"
+  }
+}

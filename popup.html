@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exitowl</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="./lib/leaflet/leaflet.css" />
+</head>
+
+<body>
+  <h2><img src="icons/icon128.png" class="btn_style">Exitowl-
+    <span>Adventure calls? The path unknown! With Exitowl you're not alone.</span>
+  </h2>
+
+
+  <p>Select Blockage Type:</p>
+  <button id="check_rain"> <img src="icons/waterlogging.png.webp" class="btn_style"> Waterlogging</button>
+
+  <button id="check_snow"><img src="icons/snowdrift.webp" class="btn_style">Snowdrift</button>
+
+  <button id="check_landslide"><img src="icons/landslide.png" class="btn_style"> Landslide</button>
+
+
+  <p>Nearby Resources:</p>
+  <button id="find_medical"><img src="icons/hospital.png" class="btn_style"> Medical</button>
+  <button id="find_food"><img src="icons/food.png" class="btn_style"> Food Court</button>
+  <button id="find_shelter"><img src="icons/shelter.png" class="btn_style"> Shelter</button>
+
+  <!-- Button to set the route -->
+  <button id="set_route" class="btn_style">Set Route</button>
+
+  <div id="map" style="height: 300px; width: 100%;"></div>
+
+  <!-- <script src="./lib/pathfinding-0.4.18/package/visual/lib/pathfinding-browser.min.js"></script> -->
+  <script src="./lib/leaflet/leaflet.js"></script>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
